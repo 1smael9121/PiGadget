@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "oMFta5KDu/U=",
+  "dgSpecHash": "w+FOcTdbIjQ=",
   "success": true,
   "projectFilePath": "C:\\Users\\izzy9\\PiGadget\\PiGadget.csproj",
   "expectedPackageFiles": [
@@ -37,7 +37,11 @@
     "C:\\Users\\izzy9\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "C:\\Users\\izzy9\\.nuget\\packages\\system.io.pipelines\\8.0.0\\system.io.pipelines.8.0.0.nupkg.sha512",
     "C:\\Users\\izzy9\\.nuget\\packages\\system.reactive\\6.0.1\\system.reactive.6.0.1.nupkg.sha512",
-    "C:\\Users\\izzy9\\.nuget\\packages\\tmds.dbus.protocol\\0.21.2\\tmds.dbus.protocol.0.21.2.nupkg.sha512"
+    "C:\\Users\\izzy9\\.nuget\\packages\\tmds.dbus.protocol\\0.21.2\\tmds.dbus.protocol.0.21.2.nupkg.sha512",
+    "C:\\Users\\izzy9\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.15\\microsoft.netcore.app.ref.8.0.15.nupkg.sha512",
+    "C:\\Users\\izzy9\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.15\\microsoft.windowsdesktop.app.ref.8.0.15.nupkg.sha512",
+    "C:\\Users\\izzy9\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.15\\microsoft.aspnetcore.app.ref.8.0.15.nupkg.sha512",
+    "C:\\Users\\izzy9\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.15\\microsoft.netcore.app.host.win-x64.8.0.15.nupkg.sha512"
   ],
   "logs": []
 }
