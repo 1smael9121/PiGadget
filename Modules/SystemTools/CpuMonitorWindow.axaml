@@ -1,0 +1,13 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="PiGadget.Modules.SystemTools.CpuMonitorWindow"
+        Title="CPU Monitor" Width="400" Height="300">
+
+  <StackPanel Margin="10">
+    <TextBlock Text="CPU Usage:" FontSize="16" FontWeight="Bold"/>
+
+    <ScrollViewer Height="200" VerticalScrollBarVisibility="Auto">
+        <TextBox x:Name="CpuTextBox" AcceptsReturn="True" IsReadOnly="True"/>
+    </ScrollViewer>
+  </StackPanel>
+</Window>

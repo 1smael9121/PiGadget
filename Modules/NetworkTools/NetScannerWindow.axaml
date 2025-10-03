@@ -1,0 +1,13 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="PiGadget.Modules.NetworkTools.NetScannerWindow"
+        Title="Network Scanner" Width="400" Height="300">
+
+  <DockPanel>
+    <Button DockPanel.Dock="Top" Content="Scan" Height="40" Click="Scan_Click"/>
+
+    <ScrollViewer DockPanel.Dock="Bottom" VerticalScrollBarVisibility="Auto">
+        <TextBox x:Name="ResultsBox" AcceptsReturn="True" IsReadOnly="True"/>
+    </ScrollViewer>
+  </DockPanel>
+</Window>
