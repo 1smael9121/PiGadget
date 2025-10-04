@@ -22,5 +22,11 @@ namespace PiGadget
             var cpu = new CpuMonitorWindow();
             cpu.ShowDialog(this);
         }
+
+        private void Calculator_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
+        {
+            var calc = new CalculatorWindow();
+            calc.ShowDialog(this);
+        }
     }
 }

@@ -2,11 +2,12 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         x:Class="PiGadget.MainWindow"
         Title="Pi Gadget"
-        WindowState="Normal"
+        WindowState="Maximized"
         CanResize="False">
 
   <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Spacing="20">
     <Button Width="200" Height="50" Content="Network Tools" Click="NetworkTools_Click"/>
     <Button Width="200" Height="50" Content="System Tools" Click="SystemTools_Click"/>
+    <Button Width="200" Height="50" Content="Calculator" Click="Calculator_Click"/>
   </StackPanel>
 </Window>
