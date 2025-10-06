@@ -1,4 +1,6 @@
+using Avalonia;
 using Avalonia.Controls;
+using Avalonia.Platform;
 using PiGadget.Modules.NetworkTools;
 using PiGadget.Modules.SystemTools;
 
@@ -9,6 +11,19 @@ namespace PiGadget
         public MainWindow()
         {
             InitializeComponent();
+
+            //Waits for Intialization
+            this.Opened += (_, _) =>
+            {
+                var screen = Screens.Primary;
+                if (screen != null)
+                {
+                    var bounds = screen.Bounds;
+                    Width = bounds.Width;
+                    Height = bounds.Height;
+                    Position = new PixelPoint(0, 0);
+                }
+            };
         }
 
         private void NetworkTools_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
