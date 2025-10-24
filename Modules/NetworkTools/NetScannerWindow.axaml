@@ -1,7 +1,9 @@
 <Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         x:Class="PiGadget.Modules.NetworkTools.NetScannerWindow"
-        Title="Network Scanner" Width="400" Height="300">
+        Title="Network Scanner" Width="480" Height="320"
+        SystemDecorations="None"
+        CanResize="False">
 
   <DockPanel>
     <Button DockPanel.Dock="Top" Content="Scan" Height="40" Click="Scan_Click"/>
