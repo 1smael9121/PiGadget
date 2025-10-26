@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PiGadget")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e95d9a524b2deb5556868d441a695e646f0bb0bb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9fed076da9bc5f418b785437b18e8ded78a3f8c1")]
 [assembly: System.Reflection.AssemblyProductAttribute("PiGadget")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PiGadget")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

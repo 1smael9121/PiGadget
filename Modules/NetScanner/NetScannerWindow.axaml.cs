@@ -1,6 +1,6 @@
 using Avalonia.Controls;
 
-namespace PiGadget.Modules.NetworkTools
+namespace PiGadget.Modules.NetScanner
 {
     public partial class NetScannerWindow : Window
     {
@@ -9,9 +9,9 @@ namespace PiGadget.Modules.NetworkTools
             InitializeComponent();
         }
 
-        private void Scan_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
+        private void OnCloseClick(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
         {
-            ResultsBox.Text += "Scanning network...\n";
+            this.Close();
         }
     }
 }

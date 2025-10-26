@@ -1,0 +1,59 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="PiGadget.Modules.Stats.CpuMonitorWindow"
+        Title="CPU Monitor" Width="480" Height="320"
+        SystemDecorations="None"
+        CanResize="False">
+
+  <Window.Styles>
+    <Style Selector="TextBlock">
+      <Setter Property="FontSize" Value="24"/>
+      <Setter Property="FontWeight" Value="Bold"/>
+    </Style>
+  </Window.Styles>
+
+  <WrapPanel>
+    <Button Background="#e23217"
+            Height="30"
+            Width="30"
+            Margin="440,20"
+            Button.Click="OnCloseClick">
+      <TextBlock Text="X"
+              FontSize="16"
+              FontWeight="Bold"
+              HorizontalAlignment="Center"
+              VerticalAlignment="Center"
+              Foreground="White"/>
+    </Button>
+    <StackPanel VerticalAlignment="Top">
+      <TextBlock x:Name="CpuInfoText"
+                 Margin="20,10"
+                 Width="300"
+                 Text="CPU Usage: 0%"
+                 HorizontalAlignment="Left"/>
+      <TextBlock x:Name="RamInfoText"
+                 Margin="20,10"
+                 Width="300"
+                 Text="Memory Usage: 0%"
+                 HorizontalAlignment="Left"/>
+      <TextBlock x:Name="CpuTemperatureText"
+                 Margin="20,10"
+                 Width="300"
+                 Text="CPU Temp: 0 C"
+                 HorizontalAlignment="Left"/>
+      <TextBlock x:Name="CpuClockText"
+                 Margin="20,10"
+                 Width="300"
+                 Text="CPU Clock: 0ghz"
+                 HorizontalAlignment="Left"/>
+      <Button Content="Refresh"
+              HorizontalAlignment="Right"
+              VerticalAlignment="Bottom"
+              Width="100"
+              Height="40"
+              FontSize="20"
+              Margin="360,0,20,20"
+              Click="OnRefreshClick"/>
+    </StackPanel>
+  </WrapPanel>
+</Window>

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Text;
 
-namespace PiGadget.Modules.SystemTools
+namespace PiGadget.Modules.Calculator
 {
     public partial class CalculatorWindow : Window
     {
@@ -15,9 +15,14 @@ namespace PiGadget.Modules.SystemTools
 
         private void OnButtonClick(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
         {
-            var button = sender as Button;
-            if (button != null)
-                Display.Text += button.Content.ToString();
+            if (sender is Button button)
+            {
+                var content = button.Content?.ToString();
+                if (!string.IsNullOrEmpty(content))
+                {
+                    Display.Text += content;
+                }
+            }
         }
         private void OnClearClick(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
         {
@@ -30,11 +35,15 @@ namespace PiGadget.Modules.SystemTools
                 Display.Text = Display.Text[..^1]; // Remove last character
             }
         }
+        private void OnCloseClick(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
+        {
+            this.Close();
+        }
         private void OnEqualsClick(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
         {
             try
             {
-                var token = Tokenize(Display.Text);
+                var token = Tokenize(Display.Text ?? string.Empty);
                 var postfix = ToPostfix(token);
                 double result = EvaluatePostfix(postfix);
 

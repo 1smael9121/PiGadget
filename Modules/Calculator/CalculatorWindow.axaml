@@ -1,37 +1,38 @@
 <Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        x:Class="PiGadget.Modules.SystemTools.CalculatorWindow"
-        Title="Calculator" Width="480" Height="320"
-        SystemDecorations="None"
-        CanResize="False"
-        Background="#210a56">
+        x:Class="PiGadget.Modules.Calculator.CalculatorWindow"
+        Title="Calculator">
     <Window.Styles>
         <Style Selector="Button">
             <Setter Property="FontSize" Value="24"/>
-            <Setter Property="CornerRadius" Value="15"/>
-            <Setter Property="FontWeight" Value="Bold"/>
-            <Setter Property="BorderBrush" Value="White"/>
-            <Setter Property="BorderThickness" Value="2"/>
             <Setter Property="Width" Value="80"/>
             <Setter Property="Height" Value="40"/>
-            <Setter Property="HorizontalContentAlignment" Value="Center"/>
-            <Setter Property="VerticalContentAlignment" Value="Center"/>
-            <Setter Property="Background" Value="#c6d8f5ff"/>
         </Style>
     </Window.Styles>
-    <StackPanel>
-        <Border Background="#c6d8f5ff" Height="30" HorizontalAlignment="Stretch" Margin="20" BorderBrush="White" BorderThickness="2" CornerRadius="15">  
+    <WrapPanel>
+        <Border Background="#c6d8f5ff" Height="30" Width="410" Margin="20,20,10,15" BorderBrush="White" BorderThickness="2" CornerRadius="15">
             <TextBlock x:Name="Display"
                 FontSize="28"
-                HorizontalAlignment="Stretch"
                 TextAlignment="Right"
-                VerticalAlignment="Center"
                 Height="30"
                 FontWeight="Bold"
                 Margin="10,0,10,0"/>
         </Border>
-        
-        <UniformGrid Rows="5" Columns="4" RowSpacing="10" ColumnSpacing="20" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Button Background="#e23217"
+                Height="30"
+                Width="30"
+                VerticalAlignment="Top"
+                Margin="0,20"
+                Button.Click="OnCloseClick">
+            <TextBlock Text="X"
+                       FontSize="16"
+                       FontWeight="Bold"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       Foreground="White"/>
+        </Button>
+
+        <UniformGrid Rows="5" Columns="4" RowSpacing="10" ColumnSpacing="20" Margin="40,0">
             <!-- First Row --> 
             <Button Content="7" Click="OnButtonClick"/>
             <Button Content="8" Click="OnButtonClick"/>
@@ -58,6 +59,5 @@
             <Button Content="C" Click="OnClearClick"/>
             <Button Content="Del" Click="OnDeleteClick"/>
         </UniformGrid>
-    </StackPanel>
-
+    </WrapPanel>
 </Window>

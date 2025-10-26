@@ -24,14 +24,14 @@ build_property.EnableCodeStyleSeverity =
 [C:/Users/izzy9/PiGadget/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/izzy9/PiGadget/MainWindow.axaml]
+[C:/Users/izzy9/PiGadget/Host/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/izzy9/PiGadget/Modules/NetworkTools/NetScannerWindow.axaml]
+[C:/Users/izzy9/PiGadget/Modules/Calculator/CalculatorWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/izzy9/PiGadget/Modules/SystemTools/CalculatorWindow.axaml]
+[C:/Users/izzy9/PiGadget/Modules/NetScanner/NetScannerWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/izzy9/PiGadget/Modules/SystemTools/CpuMonitorWindow.axaml]
+[C:/Users/izzy9/PiGadget/Modules/Stats/CpuMonitorWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
