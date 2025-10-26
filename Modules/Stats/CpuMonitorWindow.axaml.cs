@@ -1,5 +1,4 @@
 using Avalonia.Controls;
-
 namespace PiGadget.Modules.Stats
 {
     public partial class CpuMonitorWindow : Window
@@ -17,10 +16,10 @@ namespace PiGadget.Modules.Stats
 
         private void OnRefreshClick(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
         {
-            CpuInfoText.Text = "Loading...";
-            RamInfoText.Text = "Loading...";
-            CpuTemperatureText.Text = "Loading...";
-            CpuClockText.Text = "Loading...";
+            CpuInfoText.Text = SystemStats.GetCpuInfo();
+            RamInfoText.Text = SystemStats.GetMemoryInfo();
+            CpuTemperatureText.Text = SystemStats.GetCpuTemperature();
+            CpuClockText.Text = SystemStats.GetCpuClock();
         }
     }
 }

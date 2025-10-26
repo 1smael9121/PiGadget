@@ -2,16 +2,14 @@ using System;
 using System.Diagnostics;
 using System.IO;
 
-
-namespace PiGadget.Shared
+public class SystemStats
 {
-    public class SystemStats
+    public static string GetCpuInfo()
     {
-        public static string GetCpuInfo()
-        {
-            return File.ReadAllText("/proc/cpuinfo");
-        }
-        public static string GetMemoryInfo()
+        return File.ReadAllText("/proc/cpuinfo");
+    }
+
+    public static string GetMemoryInfo()
     {
         return File.ReadAllText("/proc/meminfo");
     }
@@ -43,6 +41,5 @@ namespace PiGadget.Shared
         string result = process.StandardOutput.ReadToEnd();
         process.WaitForExit();
         return result.Trim();
-    }
     }
 }
